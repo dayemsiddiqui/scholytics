@@ -13,7 +13,7 @@ app.register_blueprint(auth)
 
 @app.route('/')
 def home():
-	return "Hello World"
+	return render_template("index.html")
 
 @app.route('/welcome')
 def welcome():
